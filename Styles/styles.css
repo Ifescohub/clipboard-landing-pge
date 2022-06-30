@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    line-height: 1.5;
+}
+
+:root{
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+    --font: 'Bai Jamjuree', sans-serif;
+}
+
+/* GLOBAL SETTING ---- */
+body{
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--Dark-Grayish-Blue);    
+    font-size: 18px;
+    max-width: 100%;
+}
+
+h1, h2, h3{
+    font-weight: 600;
+}
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: var(--font);
+    color: #ffffff;
+    font-size: 14px;
+    padding: 13px 35px;
+    text-decoration: none;
+    border: none;
+    margin: 10px;
+  }
+
+  .green{
+    -webkit-box-shadow: 0 2px 5px hsl(171, 66%, 44%);
+    -moz-box-shadow: 0 2px 5px hsl(171, 66%, 44%);
+    box-shadow: 0 2px 5px hsl(171, 66%, 44%);
+    background: var(--Strong-Cyan);
+  }
+  
+  .blue{
+    -webkit-box-shadow: 0 2px 5px hsl(233, 100%, 69%);
+    -moz-box-shadow: 0 2px 5px hsl(233, 100%, 69%);
+    box-shadow: 0 2px 5px hsl(233, 100%, 69%);
+    background: var(--Light-Blue);
+  }
+
+  .btn:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+
+
+ /* HEADER SECTION----------  */
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: no-repeat url(../images/bg-header-desktop.png);
+    font-size: 20px;
+}
+
+.logo{
+    width: 120px;
+}
+
+.hero-details{
+    padding: 1rem 8rem;
+}
+
+.hero-details h1{
+    font-size: 40px;
+}
+
+.hero-details p{
+    padding: 0 10rem;
+}
+
+/* ABOUT SECTION ---- */
+#about{
+    text-align: center;
+    padding: 4rem 13rem;
+}
+
+#about p{
+    padding: 0 4rem;
+}
+
+
+/* SERVICES SECTION --------- */
+#services{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 5rem 0;
+}
+
+#services img{
+    max-width: 50%;
+    width: 30rem;
+    padding-left: 1rem;
+}
+
+.service{
+    width: 50%;
+    align-self: center;
+    padding: 1rem 6rem 1rem 2rem;
+}
+
+.service p{
+    padding: 0.4rem 3rem 1rem 0;
+}
+
+/* ACCESS SECTION  */
+#access{
+    text-align: center;
+    padding: 1rem 5rem;
+    max-width: 100%;
+}
+
+.a-details{
+    padding: 1.5rem 12rem;
+}
+
+.a-details p{
+    padding: 0  3rem;
+}
+
+#access img{
+    max-width: 70%;
+    width: 35rem;
+}
+
+/* FEATURES SECTION ------  */
+#features{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 6rem auto;
+}
+
+.f-heading{
+    padding: 1rem 10rem;
+}
+
+.f-body{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 2.5rem;
+}
+
+[class*="feature-"]{
+    padding: 1rem 1rem;
+    width: 33.3%;
+}
+
+.f-body p{
+    margin: 15px;
+}
+
+/* CLIENTS SECTION ------ */
+#clients{
+    display: flex;
+    justify-content: space-around;
+    row-gap: 20px;
+    text-align: center;
+    margin: 7rem auto;
+    width: 100%;
+}
+
+#clients img{
+    display: block;
+    padding: 1rem 2rem;
+    max-width: 20%;
+    
+}
+
+/* CALL TO ACTION ----- */
+.CTA{
+    text-align: center;
+    padding: 1rem 8rem;
+    max-width: 50px auto;
+}
+
+.CTA p{
+    padding: 0 7rem 1.5rem;
+}
+
+/* FOOTER SECTION ---- */
+#footer{
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 0.7rem 2rem 1.5rem;
+    position: relative;
+    background-color: hsl(180, 21%, 93%);
+    font-size: 16px;
+    margin-top: 5rem;
+}
+
+.footer-logo{
+    width: 4rem;
+    height: 3rem;
+    align-self: center;
+    max-width: 20%;
+}
+
+.footer-menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 50%;
+}
+
+.footer-menu p:hover{
+    color: var(--Strong-Cyan);
+}
+
+.footer-address{
+    max-width: 30%;
+}
+
+.footer-icon img{
+    padding: 15px;
+    align-self: center;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+.footer-icon img:hover{
+    
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: left; 
+}
+
+.attribution span{
+    display: block;
+}
+.attribution a { 
+    text-decoration: none;
+    color: var(--Strong-Cyan); 
+}
+
+.attribution a:hover{
+    text-decoration: overline;
+    opacity: 0.7;
+}
+
+/* MEDIA QUERIES --------------------------------------------------------------------------- */
+/* TABLET SIZE ------------ */
+@media (max-width: 910px) {                       
+     /* HEADER SECTION----------  */
+body{
+    font-size: 17px;
+}
+
+.hero-details{
+    padding: 0.5rem;
+}
+
+.hero-details h1{
+    font-size: 38px;
+}
+
+.hero-details p{
+    padding: 0 5rem;
+}
+
+/* ABOUT SECTION ---- */
+#about{
+    text-align: center;
+    padding: 1rem 6rem;
+}
+
+#about p{
+    padding: 0;
+}
+
+/* SERVICES SECTION --------- */
+#services img{
+    max-width: 40%;
+    width: 20rem;
+    height: 18rem;
+    padding-left: 0.5;
+}
+
+.service{
+    width: 60%;
+    padding: 0.5rem 1.5rem;
+}
+
+.service p{
+    padding: 0.4rem 0;
+    font-size: 16px;
+}
+
+/* ACCESS SECTION  */
+#access{
+    padding: 1rem 3rem;
+    max-width: 100%;
+}
+
+.a-details{
+    padding: 1.5rem 3rem;
+}
+
+.a-details p{
+    padding: 0 2rem;
+}
+
+#access img{
+    max-width: 80%;
+    width: 27rem;
+}
+
+/* FEATURES SECTION ------  */
+.f-heading{
+    padding: 1rem 4rem;
+}
+
+.f-body{
+    padding: 1rem;
+    font-size: 15px;
+}
+
+[class*="feature-"]{
+    padding: 1rem 1rem;
+}
+
+/* CLIENTS SECTION ------ */
+
+#clients img{
+    padding: 1rem;   
+}
+
+/* CALL TO ACTION ----- */
+.CTA{
+    padding: 1rem 4rem;
+}
+
+.CTA p{
+    padding: 1rem;
+}
+
+/* FOOTER SECTION ---- */
+#footer{
+    padding: 0.7rem 1rem 1.5rem;
+    font-size: 14px;
+}
+
+.footer-logo{
+    max-width: 15%;
+    width: 3rem;
+    height: 2rem;
+}
+
+.footer-menu{
+    gap: 10px;
+}
+
+.footer-address{
+    width: 30%;
+}
+.footer-icon img{
+    padding: 12px;
+    width: 40px;
+}
+}
+
+
+@media (max-width: 630px) {
+     /* HEADER SECTION----------  */
+header{
+    gap: 30px;
+    font-size: 20px;
+}
+
+.logo{
+    width: 120px;
+}
+
+.hero-details{
+    padding: 1rem 2rem;
+}
+
+.hero-details h1{
+    font-size: 40px;
+}
+
+.hero-details p{
+    padding: 0 1rem;
+}
+
+.hero-button{
+    width: 100%;
+    max-width: auto;
+}
+.btn {
+    display: block;
+    width: 70%;
+    font-size: 16px;
+    padding: 13px 35px;
+    margin: 10px auto;
+  }
+
+/* ABOUT SECTION ---- */
+#about{
+    padding: 2rem;
+}
+
+#about p{
+    padding: 0.7rem;
+}
+
+
+/* SERVICES SECTION --------- */
+#services{
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+}
+
+#services img{
+    max-width: 90%;
+    width: 25rem;
+    padding: 1rem;
+}
+
+.service{
+    width: 100%;
+    padding: 2rem;
+}
+
+.service p{
+    padding: 0.4rem 3rem 1rem;
+}
+
+/* ACCESS SECTION  */
+#access{
+    padding: 1rem;
+}
+
+.a-details{
+    padding: 2rem;
+}
+
+.a-details p{
+    padding: 0  1rem;
+}
+
+#access img{
+    max-width: 85%;
+}
+
+/* FEATURES SECTION ------  */
+.f-heading{
+    padding: 1rem;
+}
+
+.f-body{
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+[class*="feature-"]{
+    padding: 1rem 3rem;
+    width: unset;
+}
+
+/* CLIENTS SECTION ------ */
+#clients{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    row-gap: 20px;
+    text-align: center;
+    margin: 5rem auto;
+    width: 100%;
+}
+
+#clients img{
+    display: block;
+    padding: 1rem 2rem;
+    max-width: 50%;
+    width: 12rem;
+}
+
+/* CALL TO ACTION ----- */
+.CTA{
+    text-align: center;
+    padding: 1rem;
+    max-width: 50px auto;
+}
+
+.CTA p{
+    padding: 0.5rem 2rem 1.5rem;
+}
+
+.CTA .btn{
+    margin-top: 20px;
+}
+
+/* FOOTER SECTION ---- */
+#footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem 0 2rem;
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-logo{
+    width: 4rem;
+    height: 3rem;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    text-align: center;
+    align-items: center;
+    margin: 1.5rem 1rem;
+    min-width: 100%;
+}
+
+.footer-address{
+    min-width: 100%;
+    margin: 1rem auto;
+}
+
+.footer-icon img{
+    padding: 1.5rem 1rem;
+    align-self: center;
+    width: 60px;
+}
+
+.attribution span{
+    display: inline;
+}
+
+.attribution { 
+    text-align: center; 
+}
+}
