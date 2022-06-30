@@ -67,8 +67,10 @@ header{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    padding: 5rem 0;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
+    max-height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -96,6 +98,7 @@ header{
 #about{
     text-align: center;
     padding: 4rem 13rem;
+    margin: 3rem 0;
 }
 
 #about p{
@@ -340,7 +343,7 @@ body{
 
 .f-body{
     padding: 1rem;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 [class*="feature-"]{
