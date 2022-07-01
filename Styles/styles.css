@@ -69,7 +69,7 @@ header{
     gap: 30px;
     padding: 5rem 0;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -116,7 +116,6 @@ header{
 #services img{
     max-width: 50%;
     width: 30rem;
-    padding-left: 1rem;
 }
 
 .service{
@@ -133,11 +132,12 @@ header{
 #access{
     text-align: center;
     padding: 1rem 5rem;
-    max-width: 100%;
+    width: 100%;
 }
 
 .a-details{
     padding: 1.5rem 12rem;
+    width: 100%;
 }
 
 .a-details p{
@@ -277,7 +277,7 @@ header{
 
 /* MEDIA QUERIES --------------------------------------------------------------------------- */
 /* TABLET SIZE ------------ */
-@media (max-width: 910px) {                       
+@media (max-width: 960px) {                       
      /* HEADER SECTION----------  */
 body{
     font-size: 17px;
@@ -303,7 +303,7 @@ header{
 /* ABOUT SECTION ---- */
 #about{
     text-align: center;
-    padding: 1rem 6rem;
+    padding: 1rem 7rem;
 }
 
 #about p{
@@ -315,12 +315,11 @@ header{
     max-width: 40%;
     width: 20rem;
     height: 18rem;
-    padding-left: 0.5;
 }
 
 .service{
     width: 60%;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 2rem;
 }
 
 .service p{
@@ -335,7 +334,7 @@ header{
 }
 
 .a-details{
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 4rem;
 }
 
 .a-details p{
@@ -358,7 +357,7 @@ header{
 }
 
 [class*="feature-"]{
-    padding: 1rem 1rem;
+    padding: 1rem;
 }
 
 /* CLIENTS SECTION ------ */
@@ -402,7 +401,7 @@ header{
 }
 
 
-@media (max-width: 630px) {
+@media (max-width: 650px) {
      /* HEADER SECTION----------  */
 
 header{
