@@ -69,8 +69,7 @@ header{
     gap: 30px;
     padding: 5rem 0;
     width: 100vw;
-    height: fit-content;
-    max-height: 100vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -248,7 +247,14 @@ header{
 }
 
 .footer-icon img:hover{
-    
+    filter: opacity(0.5) 
+            sepia(10) 
+            saturate(10) 
+            brightness(10)
+            contrast(10)
+            hue-rotate(60deg)
+            drop-shadow(0 0 0 hsl(171, 66%, 44%)); 
+               
 }
 
 .attribution { 
@@ -275,6 +281,11 @@ header{
      /* HEADER SECTION----------  */
 body{
     font-size: 17px;
+}
+
+header{
+    padding: 5rem 0;
+    height: fit-content;
 }
 
 .hero-details{
@@ -393,13 +404,17 @@ body{
 
 @media (max-width: 630px) {
      /* HEADER SECTION----------  */
+
 header{
+    height: 100vh;
     gap: 30px;
-    font-size: 20px;
+    font-size: 19px;
+    place-items: center;
+    padding: 1rem auto;
 }
 
 .logo{
-    width: 120px;
+    width: 110px;
 }
 
 .hero-details{
